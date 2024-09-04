@@ -11,4 +11,6 @@ example:
 GENDATE.EXE
 echo %DATEYMD%
 ```
-no need to write a set statement into a batch file and call it
+no need to write a set statement into a batch file and call it.
+
+it was tested on a real 386 MSDOS 6.22 machine. it works with command.com as command interpreter. 4dos does not work.
