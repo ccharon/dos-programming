@@ -1,6 +1,8 @@
 # Create / Read / Update / Delete MSDOS Env Variables
 
-using ENVIRO.PAS as a Unit allows you to directly manipulate your Environment. I wanted to have this to create backups containing a date in their filename.
+The Unit and Test compile and work under Turbo Pascal 7.0 for MSDOS.
+
+Using ENVIRO.PAS as a Unit in your own programs allows you to directly manipulate your Environment. I wanted to have this to create backups containing a date in their filename.
 
 example:
 
