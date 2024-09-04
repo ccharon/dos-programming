@@ -2,7 +2,7 @@
 
 using ENVIRO.PAS as a Unit allows you to directly manipulate your Environment. I wanted to have this to create backups containing a date in their filename.
 
-exanple:
+example:
 
 ```
 @echo off
