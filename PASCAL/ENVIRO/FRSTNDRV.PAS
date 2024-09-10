@@ -38,10 +38,10 @@ Begin
         Data := Mem[Ptr.Seg:Ptr.Ofs + I];
 
         If (Data < 32) or (Data > 126) Then
-            StrData := StrData + '.'
-        Else
-            StrData := StrData + Chr(Data);
-        End;
+            Data := Ord('.');
+
+        StrData := StrData + Chr(Data);
+    End;
     
     ExtractNetDrive := StrData;
 End;
