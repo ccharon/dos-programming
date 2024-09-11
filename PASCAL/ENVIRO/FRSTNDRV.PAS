@@ -27,16 +27,14 @@ Const
 { Compare the bytes at the pointer with a given string }
 Function MemEqualsStr(Ptr: FarPointer; Str: String): Boolean;
 Var
-    Data: Byte;
     I: Integer;
+
 Begin
     MemEqualsStr := True;
     
     For I := 0 To Length(Str) - 1 Do
-    Begin
-        Data := Mem[Ptr.Seg:Ptr.Ofs + I];
-        
-        If Data <> Ord(Str[I + 1]) Then
+    Begin        
+        If Mem[Ptr.Seg:Ptr.Ofs + I] <> Ord(Str[I + 1]) Then
         Begin
             MemEqualsStr := False;
             Exit;
